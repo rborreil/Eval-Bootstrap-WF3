@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eval-html-css-js-WF3</title>
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- CAROUSEL HEADER -->
+    <header class="container-fluid mb-4">
+        <div class="row">
+            <div class="col-12 px-0">
+                <!-- NAV -->
+                <nav class="navbar navbar-dark position-absolute w-100">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarNav">
+                        <ul class="navbar-nav px-3">
+                            <li class="nav-item active">
+                                <a class="nav-link text-secondary" href="#">Louer une voiture<span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#">Louer un utilitaire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#">Réserver un chauffeur</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#">Découvrez nos agencesr</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#">Mon compte</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- CAROUSEL -->
+                <div id="carousel-header" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/background.jpg" class="d-block w-100" alt="voitures de luxe">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/ferrari.jpg" class="d-block w-100" alt="voitures de luxe">
+                        </div>
+                    </div>
+                </div>
+                <!-- TITRE ET SOUS TITRE -->
+                <div id="titre">
+                    <h1 class="text-white text-center">
+                        Bienvenue à bord
+                    </h1>
+                    <h2 class="text-white text-center">
+                        Location de voitures 24h/24 et 7j/7
+                    </h2>
+                </div>
+                <!-- FORMULAIRE -->
+                <form action="" method="post" class="form-inline position-absolute align-items-stretch">
+                    <div class="d-flex form-white">
+                        <!-- FORMULAIRE -->
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle rounded" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Adresse de départ
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Paris 15</a>
+                                <a class="dropdown-item" href="#">Marseille</a>
+                                <a class="dropdown-item" href="#">Lyon</a>
+                                <a class="dropdown-item" href="#">Bordeaux</a>
+                                <a class="dropdown-item" href="#">Grenoble</a>
+                                <a class="dropdown-item" href="#">Toulouse</a>
+                                <a class="dropdown-item" href="#">Montpellier</a>
+                                <a class="dropdown-item" href="#">Cannes</a>
+                            </div>
+                        </div>
+                        <!-- DEBUT DE LOCATION -->
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Début de location" data-toggle="datepicker"> 
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIN DE LOCATION -->
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Fin de location" data-toggle="datepicker">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Valider ma recherche</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- RESULTATS -->
+        <div class="row justify-content-between align-items-center">
+            <div><strong>7</strong> résultats</div>
+            <div class="dropdown">
+                <button class="btn bg-dropdown dropdown-toggle rounded" type="button" id="dropDownSearch"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Prix croissant
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropDownSearch">
+                    <a class="dropdown-item" href="#">Prix décroissant</a>
+                </div>
+            </div>
+        </div>
+        <!-- LIGNES VEHICULES -->
+        <div id="lignes-voitures">
+            <!-- VOITURE 1 -->
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div id="carouselAuto1" class="carousel slide carousel-auto">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/vehicule1.png" class="d-block w-100" alt="Peugeot 208">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/vehicule1.png" class="d-block w-100" alt="Peugeot 208">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselAuto1" role="button" data-slide="prev">
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselAuto1" role="button" data-slide="next">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="pl50">
+                        <h3>Peugeot 208</h3>
+                        <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000 km (0,5/km supplémentaire), 999€ - Agence de
+                            Paris
+                        </p>
+                        <a href="" class="btn btn-success">Réserver et Payer</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- VOITURE 2 -->
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div id="carouselAuto2" class="carousel slide carousel-auto">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/vehicule2.png" class="d-block w-100" alt="Ford Focus">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/vehicule2.png" class="d-block w-100" alt="Ford Focus">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselAuto2" role="button" data-slide="prev">
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselAuto2" role="button" data-slide="next">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="pl50">
+                        <h3>Ford Focus</h3>
+                        <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000 km (0,5/km supplémentaire), 999€</p>
+                        </p>
+                        <a href="" class="btn btn-success">Réserver et Payer</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- VOITURE 3 -->
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div id="carouselAuto3" class="carousel slide carousel-auto">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/vehicule3.png" class="d-block w-100" alt="Audi A1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/vehicule3.png" class="d-block w-100" alt="Audi A1">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselAuto3" role="button" data-slide="prev">
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselAuto3" role="button" data-slide="next">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="pl50">
+                        <h3>Audi A1</h3>
+                        <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000 km (0,55/km supplémentaire), 1100€ - Agence de
+                            Paris
+                        </p>
+                        <a href="" class="btn btn-success">Réserver et Payer</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- VOITURE 4 -->
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div id="carouselAuto4" class="carousel slide carousel-auto">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/vehicule4.png" class="d-block w-100" alt="Opel Mokka">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/vehicule4.png" class="d-block w-100" alt="Opel Mokka">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselAuto4" role="button" data-slide="prev">
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselAuto4" role="button" data-slide="next">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="pl50">
+                        <h3>Opel Mokka</h3>
+                        <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000 km (0,4/km supplémentaire), 1150€ - Agence de
+                            Paris
+                        </p>
+                        <a href="" class="btn btn-success">Réserver et Payer</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- FOOTER -->
+        <footer class="row justify-content-center align-items-start">
+            <img src="./images/agence.jpg" alt="Nos bureaux" class="img-footer">
+            <ul class="list-unstyled">
+                <li>Notre Agence de Paris</li>
+                <li>300 boulevard de Vaugirard, 75015 Paris</li>
+                <li>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</li>
+                <li>01 49 78 21 33</li>
+                <li><a href="mailto:contact@vtc.com" class="text-black">contact@vtc.com</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js/datepicker.fr-FR.js"></script>
+    <script>
+        // Initialisation des calendriers
+        $('[data-toggle="datepicker"]').datepicker({
+            language: 'fr-FR',
+            format: 'dd/mm/yyyy' // Dans ce format avec des / la propriété format est optionnelle dès lors que l'on est en français.
+        });
+        // Changement de l'intervalle de défilement des slides du carousel au niveau du header.
+        $('#carousel-header').carousel({
+            interval: 15000
+        });
+
+        function configCarousel() {
+            // On supprime tout écouteur potentiellement présent sur les objets pour éviter un cumul d'écouteurs sur les objets et éviter ainsi un risque de fuite de mémoire.
+            $('.carousel-auto').off();
+            // On écoute avec l'événement natif Bootstrap slid.bs.carousel le fait que le carousel ait fini son cycle de slide entre deux visuels et on le met en pause. Ceci corrige donc le fait que le carousel repasse en défilement automatique quand on clique sur une des flèches.
+            $('.carousel-auto').on('slid.bs.carousel', function () {
+                // do something...
+                $(this).carousel("pause");
+            });
+        }
+        configCarousel();
+        // LAZY LOAD
+        // On écoute le scroll de l'ascenseur de la fenêtre du navigateur. S'il dépasse 800px et que le contenu complémentaire n'a pas été chargé, on déclenche le loading.
+        // On déclare une variable, un flag (boolean) à la valeur false.
+        var contentLoaded = false;
+        // 
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            // Do something
+            // console.log(scroll);
+            if (scroll > 800 && !contentLoaded) {
+                // On change la valeur du flag pour qu'il n'y ai plus de chargement
+                contentLoaded = true; // contentLoaded = !contentLoaded
+                // On déclenche le load
+                // var array = [1,12,45];
+                // array[2]
+                // on crée und div en shadow dom (c'est à dire un élément du DOM (Document Object Model), une div mais qui n'est pas dans body donc pas affichée et réside en RAM de la machine )
+                var shadowDom = $("<div></div>");
+                // On utilise l'élément en shadow DOM afin de charger le contenu du fichier html
+                // ensuite le callback (la fonction annonyme) récupère en paramètre le contenu
+                // du fichier (le code html) et on l'injecte dans la page à l'aide.
+                $(shadowDom).load('load.html', function (reponse) {
+                    // console.log(reponse);
+                    $("#lignes-voitures").append(reponse);
+                    // On relance la fonction afin de prendre en charge les nouveaux carousels apparus dans la page.
+                    configCarousel();
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

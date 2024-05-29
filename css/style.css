@@ -1,0 +1,156 @@
+header nav {
+    z-index: 3;
+}
+
+button[type=submit] {
+    white-space: nowrap;
+}
+
+/* OVERRIDE BOOTSTRAP */
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.navbar-toggler {
+    border: 2px solid transparent;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(136, 136, 136, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+#navbarNav {
+    margin: 0 -15px;
+}
+
+#titre {
+    position: absolute;
+    top: 63px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#titre h1 {
+    font-size: 2.8125rem;
+}
+
+#titre h2 {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 0.8125rem;
+}
+
+.pl50 {
+    padding-left: 50px;
+}
+
+.form-inline {
+    bottom: 67px;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-flow: row nowrap;
+}
+
+.form-white {
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.form-white>div {
+    margin-right: 60px;
+}
+
+.form-inline .btn,
+.form-inline .form-control {
+    font-size: 0.875rem;
+}
+
+header .btn {
+    border-radius: 0;
+}
+
+header .btn.btn-success {
+    border: 0;
+    padding: .375rem 4.6875rem;
+    background-color: rgba(40, 167, 70, 0.75);
+}
+
+.input-group {
+    min-width: 200px;
+}
+
+.input-group .input-group-prepend .input-group-text {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.bg-dropdown {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f6f8+0,e0e0e0+49,e0eff9+100 */
+    background: rgb(242, 246, 248);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(242, 246, 248, 1) 0%, rgba(224, 224, 224, 1) 49%, rgba(224, 239, 249, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(242, 246, 248, 1) 0%, rgba(224, 224, 224, 1) 49%, rgba(224, 239, 249, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(242, 246, 248, 1) 0%, rgba(224, 224, 224, 1) 49%, rgba(224, 239, 249, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0);
+    /* IE6-9 */
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    color: black;
+    opacity: 1;
+}
+
+.carousel-control-next {
+    justify-content: flex-end;
+}
+
+.carousel-control-prev {
+    justify-content: start;
+}
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+    color: black;
+    opacity: 1;
+}
+
+.carousel-control-next i,
+.carousel-control-prev i {
+    font-size: 1.25rem;
+}
+
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+footer ul {
+    margin-left: 60px;
+}
+
+footer ul li {
+    font-size: 0.875rem;
+    line-height: 1.26rem;
+}
+
+.img-footer {
+    width: 100%;
+    max-width: 134px;
+}
+
